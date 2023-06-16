@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  display:grid;
+  max-width: 100%;
+}
+.container{
+  width: 100%;
+  min-width: 40%;
+  display:block ;
+}
+.kanban-table{
+  height: fit-content;
+  justify-content: space-between;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0.5rem;
+}
+.kanban-block{
+  text-align: center;
+  padding: 0.6rem;
+  margin: 0.5rem;
+  width:27%;
+  min-height: 2.5rem;
+  border-radius: 0.3rem;
+  box-shadow: 2px 2px 2px 2px rgb(84, 2, 84);
+  float: right;
+}
+#mymodal{
+  height: 100vh;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: rgba(6, 6, 7, 0.5);
+  margin-bottom: 1rem;
+  top:0;
+  left: 0;
+  box-shadow: 2px 2px 2px 4px rgb(146, 146, 0);
+}
+#modal{
+  height: 100vh;
+  width: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: rgba(6, 6, 7, 0.5);
+  margin-bottom: 1rem;
+  top:0;
+  left: 0;
+  box-shadow: 2px 2px 2px 4px rgb(146, 146, 0);
+}
+
+.container-inputs{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2ox 4px red(0,0,0,0.2);
+  padding: 2rem;
+}
+#pendientes{
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+}
+#procesos{
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+}
+#completados{
+  height: fit-content;
+  background-color: rgb(255, 255, 255);
+}
+.datos{
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2ox 4px red(0,0,0,0.2);
+  padding: 2rem;
+}
+
+.kanban-form-title{
+  text-align: center;
+}
+.tarea
+{
+  text-align: left;
+  background-color: rgb(255, 255, 255);
+  margin: 0.2rem 0rem 0.3rem 0rem;
+  border: 0.1rem solid black;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+  display: flex;
+  width: 90%;
+  height: 2.5rem;
+  font-size: small;
+}
+.det{
+  
+  background: rgb(255, 255, 255);
+  width:auto;
+  margin-top: 0.3rem;
+  margin-left: 0.5rem;
+  position:absolute;  
+}
+.dat{
+ text-align: center;
+ width: 100%;
+}
+#id-proyecto
+{
+  display: none;
+}
+#prioridad
+{
+  display: none;
+}
+.recuadro
+{
+  display:flex;
+
+}
+.descrip
+{
+  display: none;
+}

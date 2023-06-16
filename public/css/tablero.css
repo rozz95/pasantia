@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+  body{
+    display:grid;
+  }
+  .nombreP{
+    color: rgb(7, 7, 7);
+  }
+  .contenedor{
+    background-color: rgb(20, 18, 15);
+    width: 100%;
+    height: 100vh;
+    display: block;
+    
+    
+  }
+.proyectos{
+ width: 90%;
+ height: auto;
+ background-color: white;
+ margin: auto;
+ padding: 2rem;
+ border-radius: 1rem;
+ margin-bottom: 0.5rem;
+ margin-top: 0.5rem;
+ box-shadow:10px 8px 15px black;
+ 
+ 
+}
+.proyecto{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    
+    
+   
+}
+.contenedor-proyectos{
+    display:flex;
+}
+.contenedor-cabezera
+{
+  display: flex;
+}
+.crear_proyecto
+{
+  background: #fff; /* color de fondo */
+  color: #000000; /* color de fuente */
+  border: 2px solid #000000; /* tamaño y color de borde */
+  
+  border-radius: 0.5rem; /* redondear bordes */
+  position: relative;
+  
+  overflow: hidden;
+  display: inline-block;
+  width: 12%;
+  height: 2rem;
+  margin-left: 5rem;
+  box-shadow: 5px 5px 10px black;
+}
+.crear_proyecto:hover
+{
+  color: #fff;/* color de fuente hover */
+}
+.crear_proyecto::after
+{
+  content: "";
+  background: #000000; /* color de fondo hover */
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  left: -20%;
+  right: -20%;
+  top: 0;
+  bottom: 0;
+  transform: skewX(45deg) scale(0, 1);
+  transition: all 0.3s ease;
+}
+.crear_proyecto:hover::after
+{
+  transition: all 0.3s ease-out;
+  transform: skewX(45deg) scale(1, 1);
+}
+
+
+.proyecto1{
+    width: 20%;
+    height: 2.5rem;
+    border-radius: 10px;
+    background-size:100%;
+    background-position:0%;
+    background-repeat:no-repeat;
+    text-align: center;
+    color: white;
+    margin: 0.5rem;
+    
+    
+
+}
+.recientes
+{
+    width: 90%;
+    height: 20%;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow:10px 8px 15px black;
+    margin-bottom: 0.5rem;
+     margin-top: 0.5rem;
+    
+}
+.reciente{
+    width: 20%;
+    height: 2.5rem;
+    border-radius: 10px;
+    background-size:100%;
+    background-position:0%;
+    background-repeat:no-repeat;
+    text-align: center;
+    color: white;
+    margin: 0.5rem;
+    
+    
+}
+.titulo-proyecto{
+    color: white;
+    
+}
+#formulario_modal{
+  height: 100vh;
+  width: 100%;
+  display: none;
+  
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: rgba(7, 7, 6, 0.5);
+  margin-bottom: 1rem;
+  top:0;
+  left: 0;
+  box-shadow: 2px 2px 2px 4px rgb(146, 146, 0);
+}
+.componentes_modal
+{
+  
+  display:flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 2ox 4px red(0,0,0,0.2);
+  padding: 3rem;
+  
+}
+.contenedor_modal{
+  width: 30%;
+  height: auto;
+  
+}
+#strong{
+  margin: 1rem 0rem;
+  font-size: small;
+}
+.titulo_modal{
+ text-align: center;
+}
+#misbotones{
+  width: 30%;
+  margin-right: 0.5rem;
+  
+}
+.misbotones
+{
+  display: flex;
+  justify-content: right;
+  padding-top: 1.5rem;
+}
+.parrafo{
+  font-size: small;
+}
+
+
