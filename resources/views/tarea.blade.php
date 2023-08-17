@@ -18,7 +18,7 @@
 
 <div class="container">
 
-<button id="ButtonModal">Crear</button>
+<button id="botontarea">Crear Tarea</button>
 
 <div class="kandan-table">
 
@@ -60,8 +60,16 @@
             
                 <strong class="strong-input">Asignacion</strong>
                 
-                <label > Miembros</label>
-              <input type="text" id="miembro" name="miembros_tarea" value="persona">
+              
+              
+                @foreach($pj as $sgl)
+                    <?php
+                      $emails = explode(', ', $sgl->miembros_proyecto);
+                    ?>
+                     @foreach($emails as $email)
+                    <input type="checkbox" name="miembros_tarea[]" value="{{ $email }}"> {{ $email }}
+                     @endforeach
+                @endforeach
              
               <label for="fecha_uno">Fecha Inicio</label>
               <input type="date" class="fecha_uno" name="fecha_inicio" id="fechainicio">
@@ -100,6 +108,7 @@
          <div class='dat'>
          <p class='nombret'>{$single->nombre_tarea}</p>
          <p class='descrip'>{$single->descripcion_tarea}</p>
+         <p class='asignacion'>{$single->miembros_tarea}</p>
          </div>
          <div class='det' >
          <i class='bx bx-plus icon' style='float:right'></i>
@@ -141,6 +150,7 @@
          <div class='dat'>
          <p  class='nombret' >{$single->nombre_tarea}</p>
          <p class='descrip'>{$single->descripcion_tarea}</p>
+         <p class='asignacion'>{$single->miembros_tarea}</p>
          </div>
          <div class='det' >
          <i class='bx bx-plus icon' style='float:right'></i>
@@ -180,6 +190,7 @@
          <div  class='dat'>
          <p class='nombret'>{$single->nombre_tarea}</p>
          <p class='descrip'>{$single->descripcion_tarea}</p>
+         <p class='asignacion'>{$single->miembros_tarea}</p>
          </div>
          <div class='det' >
          <i class='bx bx-plus icon' style='float:right'></i>
@@ -216,11 +227,12 @@
 
 <div class="recuadro" id="modal">
 <div class="datos">
-    <label >Nombre de la tarea</label>
+    <label >Nombre de la tarea:</label>
 <strong class="strong-input" id="nombre_reescrito">Nombre</strong>
-<label >Descripcion de la tarea</label>
+<label >Descripcion de la tarea:</label>
 <p class="ladescripcion" id="descript"></p>
-<strong class="encargados">encargado</strong>
+<label class="encargados">Encargado:</label>
+<strong class="encargados" id="asignado"></strong>
 <button class="cerrado">cerrar</button>  
 </div>
 </div>

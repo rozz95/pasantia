@@ -12,12 +12,16 @@ body{
   width: 100%;
   min-width: 40%;
   display:block ;
+
+
 }
 .kanban-table{
   height: fit-content;
   justify-content: space-between;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 0.5rem;
+  
+  
 }
 .kanban-block{
   text-align: center;
@@ -28,6 +32,7 @@ body{
   border-radius: 0.3rem;
   box-shadow: 2px 2px 2px 2px rgb(84, 2, 84);
   float: right;
+  
 }
 #mymodal{
   height: 100vh;
@@ -64,8 +69,9 @@ body{
   flex-direction: column;
   background-color: white;
   border-radius: 5px;
-  box-shadow: 0 2ox 4px red(0,0,0,0.2);
+  box-shadow: 0 2px 4px red(0,0,0,0.2);
   padding: 2rem;
+  
 }
 #pendientes{
   height: fit-content;
@@ -91,6 +97,16 @@ body{
 
 .kanban-form-title{
   text-align: center;
+}
+#botontarea
+{
+  background-color: white;
+  color: black;
+  border: 2px solid rgb(73, 6, 136);
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  float: left;
+  border-radius:8px;
 }
 .tarea
 {
@@ -132,5 +148,8 @@ body{
 }
 .descrip
 {
+  display: none;
+}
+.asignacion{
   display: none;
 }

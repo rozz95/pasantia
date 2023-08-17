@@ -22,10 +22,17 @@ function mostrardatos(element) {
     var divDestino = document.getElementById("nombre_reescrito");
     var desOrigen = element.querySelector(".descrip");
     var desDestino = document.getElementById("descript");
+    var AsigOrigen = element.querySelector(".asignacion");
+    var AsigDestino = document.getElementById("asignado");
+
     var contenido = divOrigen.innerHTML;
     divDestino.innerHTML = contenido;
     var contenido2 = desOrigen.innerHTML;
     desDestino.innerHTML = contenido2;
+    var contenido3=AsigOrigen.innerHTML;
+    AsigDestino.innerHTML=contenido3;
+
+  
   
     modal.style.display = "flex";
   

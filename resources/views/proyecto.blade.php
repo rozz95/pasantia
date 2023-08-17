@@ -75,7 +75,10 @@
             <Strong class="titulo_miembros" id="strong">Participantes:</Strong>
             <div class="check">
             
-            <input type="text" id="miembro" name="miembros_proyecto" value="persona">
+            @foreach($usr as $sgl)
+    <input type="checkbox" id="miCheckbox{{$sgl->id}}" name="miembros_proyecto[]" value="{{$sgl->email}}">
+    <label for="miCheckbox{{$sgl->id}}">{{$sgl->email}}</label><br>
+            @endforeach 
             </div>
             <div class="misbotones">
             <button type="submit" class="" id="misbotones">crear</button>

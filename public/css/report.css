@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+  body{
+    display:grid;
+  }
+    
+.generalContenedor {
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 4rem;
+}
+      
+.contenedorMayor {
+text-align: center;
+border: 0.1rem solid black;
+padding-top: 1.5rem;
+border-radius: 5%;
+
+}
+      
+.contenedorMenor {
+display: inline-block;
+text-align: left;
+margin: 2.5rem;
+}
+
+      
